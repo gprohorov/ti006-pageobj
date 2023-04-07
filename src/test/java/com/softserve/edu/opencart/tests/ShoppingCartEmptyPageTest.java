@@ -25,8 +25,6 @@ public class ShoppingCartEmptyPageTest extends TestRunnerFirst {
 
       Assert.assertTrue(page instanceof HomePage);
 
-
-
     }
 
 }
