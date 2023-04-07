@@ -23,7 +23,7 @@ public class ShoppingCartEmptyPage extends TopPart {
     private void initElements() {
         shoppingCartLabel = driver.findElement(By.linkText("Shopping Cart"));
         isEmptyLabel = driver.findElement(By.xpath("//h1//following::p[1]"));
-        continueButton = driver.findElement(By.cssSelector("a.btn.btn-primary"));
+        continueButton = driver.findElement(By.xpath("//a[contains(text(), 'Continue')]"));
     }
     public WebElement   getShoppingCartLabel() {
       return shoppingCartLabel;
@@ -43,7 +43,7 @@ public class ShoppingCartEmptyPage extends TopPart {
     }
 
     public String getContinueButtonText() {
-        return getContinueButton().getAttribute(TAG_ATTRIBUTE_VALUE);
+        return getContinueButton().getText();
     }
 
     //-------------   functional  --------------
