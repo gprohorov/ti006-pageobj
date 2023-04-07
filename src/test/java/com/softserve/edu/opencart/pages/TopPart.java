@@ -333,4 +333,10 @@ public abstract class TopPart {
         return new AccountLogoutPage(driver);
     }
 
+    public ShoppingCartEmptyPage gotoShoppingCartEmptyPage() {
+      clickShoppingCart();
+     return new ShoppingCartEmptyPage(driver);
+    }
+
+
 }
