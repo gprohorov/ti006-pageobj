@@ -12,9 +12,8 @@ public class ShoppingCartEmptyPageTest extends TestRunnerFirst {
     public void checkEmptyCartLabel(){
 
         String actualLabelContent = loadApplication()
-                .gotoShoppingCartEmptyPage().getShoppingCartText();
-
-
+                .gotoShoppingCartEmptyPage()
+                .getIsEmptyLabelText();
         Assert.assertEquals(actualLabelContent, LABEL);
     }
 
